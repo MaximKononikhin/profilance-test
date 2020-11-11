@@ -1,0 +1,158 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  color: #ffffff;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.login {
+  position: relative;
+
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  background-color: #171d30;
+  border-radius: 4px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+
+    button {
+      width: 100%;
+      height: 34px;
+
+      color: #ffffff;
+
+      background-color: #3a6097;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: #4d73ac;
+      }
+
+      &:active {
+        background-color: #3864a4;
+      }
+    }
+  }
+}
+
+.login__login-input,
+.login__password {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  input {
+    width: 100%;
+    height: 34px;
+
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 4px 40px 4px 16px;
+    
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+
+    background-color: #0d1221;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid #52709c;
+    }
+  }
+}
+
+.login__close-btn-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.login__close-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+
+  background-color: rgba(68,83,126,.5);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(68,83,126,.75);
+  }
+
+  &:active {
+    background-color: rgba(68,83,126, 1);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 25%;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #ffffff;
+
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 25%;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #ffffff;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.login__error {
+  position: relative;
+  margin: 0;
+  padding: 5px 12px;
+  align-self: start;
+  line-height: 24px;
+  color: #fff;
+  text-align: left;
+  background-color: rgba(184,57,57,.24);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 2px 0 0 2px;
+    background-color: #b83939;
+  }
+}

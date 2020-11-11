@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.main__heading {
+  color: #ffffff;
+}
+
+.main__link {
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition: all ease .3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
